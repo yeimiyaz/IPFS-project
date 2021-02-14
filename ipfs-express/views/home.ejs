@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IPFS NODE</title>
+</head>
+<body>
+    <h1>Upload file to IPFS</h1>
+    <form action="/upload" method="POST" enctype="multipart/form-data">
+        <label>Filename</label>
+        <input type="text" name="fileName">
+        <br><br>
+        <input type="file" name="file">
+        <br><br>
+        <input type="submit" value = "Submit">
+    </form>
+
+    <h1>Download file from IPFS</h1>
+    <form action="/download" method="POST" enctype="multipart/form-data">
+        <label>Hash</label>
+        <input type="text" name="hash">
+        <br><br>
+        <input type="submit" value = "Submit">
+    </form>
+
+</body>
+</html>
